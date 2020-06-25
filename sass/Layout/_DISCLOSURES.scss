@@ -1,0 +1,36 @@
+.DISCLOSURES {
+    .card{
+        border: none;
+    }
+    .card-header{
+        background-color: $color-white-0;
+        border: none;
+    }
+    .accordion {
+        h2 {
+            text-align: center;
+            cursor: pointer;
+            color: $color-blue-2;
+            a {
+                text-decoration: none;
+                i {
+                    padding-left: $pd-1;
+                }
+            }
+           a:hover{
+               color: $color-blue-1;
+           }
+        }
+    }
+    .collapse{
+        max-height: 240px;
+        overflow-y: scroll;
+        ul{
+            color: $color-black-0;
+            background-color: $color-white-2;
+            padding: 0 $pd-0;
+            list-style: none;
+            font-size: $fs-2;
+        }
+    }
+}

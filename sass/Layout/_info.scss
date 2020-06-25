@@ -1,0 +1,54 @@
+.info {
+    background: $color-black-4;
+    @include desktop {
+        .info_container {
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            .item_Vehicles {
+                grid-column: 1 / 2;
+            }
+            .item_Shopping {
+                grid-column: 2 / 3;
+            }
+            .intem_Finance {
+                grid-column: 3 / 4;
+            }
+            .item_Owner {
+                grid-column: 4 / 5;
+            }
+            .item_Experience {
+                grid-column: 5 / 6;
+            }
+            .info_item {
+                padding-bottom: $pd-0;
+                .list-heading {
+                    color: $color-white-0;
+                    margin-top: $pd-6;
+                    font-size: $fs-2;
+                }
+                ul {
+                    padding: 0;
+                    li {
+                        list-style: none;
+                        a {
+                            color: $color-grey-1;
+                            text-decoration: none;
+                            font-size: $fs-0;
+                        }
+                        a:hover {
+                            color: $color-white-0;
+                        }
+                    }
+                }
+            }
+            .collapse{
+                display: none;
+            }
+            .collapse{
+                display: none;
+            }
+        }
+    }
+}

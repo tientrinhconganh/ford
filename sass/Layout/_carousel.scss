@@ -1,0 +1,15 @@
+.carousel {
+    position: relative;
+    .carousel_img {
+        img {
+            max-width: 100%;
+        }
+    }
+    .carousel_btn {
+        @include styleButton($color-blue-0, $color-blue-0, $pd-2 - 3, $pd-2, $color-white-0,270px);
+        position: absolute;
+        top: 35%;
+       min-height: 50px;
+       font-size: $fs-2;
+    }
+}

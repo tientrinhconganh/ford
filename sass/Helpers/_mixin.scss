@@ -1,0 +1,43 @@
+@mixin styleButton($bg-color, $border, $pd-x, $pd-y,$color,$width) {
+    background-color: $bg-color;
+    border: 1px solid $border;
+    padding: $pd-x $pd-y;
+    color: $color;
+    width: $width;
+}
+
+@mixin styleTitle($color,$fs,$mgT,$mgB,$lh,$fw){
+    color: $color;
+    font-size: $fs;
+    margin-top: $mgT;
+    margin-bottom: $mgB;
+    line-height: $lh;
+    font-weight: $fw;
+}
+@mixin styleButton1($color,$fs,$bg,$bgbd,$width, $height){
+    color: $color;
+    font-size: $fs;
+    background: $bg;
+    border: 1px solid $bgbd;
+    width: $width;
+    height: $height;
+}
+$tablet-width: 768px;
+$desktop-width: 990px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}

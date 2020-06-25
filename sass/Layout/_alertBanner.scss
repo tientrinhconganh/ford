@@ -1,0 +1,24 @@
+.alert-banner {
+    background-color: $color-blue-5;
+    text-align: center;
+    color: $color-white-0;
+    h2 {
+        @include styleTitle($color-white-0, $fs-8, $mg-8, $mg-3, $line-height-4, $fw-0);
+        padding-top: $pd-5;
+    }
+    .description {
+        font-size: $fs-2;
+        a{
+            font-size: $fs-2;
+            text-decoration: underline;
+        }
+    }
+    button{
+        @include styleButton1($color-white-0,$fs-3,$color-blue-0,$color-blue-0,320px,45px);
+        margin-top: $mg-8;
+        margin-bottom: $mg-8 + 10px;
+    }
+    button:hover{
+        @include styleButton1($color-blue-1,$fs-3,$color-white-0,$color-blue-1,320px,45px);
+    }
+}

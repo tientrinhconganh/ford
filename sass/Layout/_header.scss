@@ -1,0 +1,114 @@
+header {
+    @include desktop{
+        .navbar-brand {
+            background: transparent url("../../img/logo1.webp") no-repeat -200px 0;
+            width: 93px;
+            height: 35px;
+            background-size: 400px 200px;
+            display: inline-block;
+            padding: 0;
+            margin-right: $mg-8;
+        }
+        .navbar-collapse {
+            li {
+                color: $color-blue-0;
+                a {
+                    text-decoration: none;
+                    font-size: $fs-2;
+                    padding: $pd-1;
+                }
+                i{
+                    font-size: $fs-3;
+                    padding-right: $pd-1 - 5px;
+                }
+            }
+            li:hover a{
+                color: $color-blue-0;
+            }
+        }
+        .navbar {
+            position: fixed;
+            z-index: 10000;
+            width: 1440px;
+            background-color: $color-white-0;
+            border-bottom: 1px solid $color-black-0;
+    
+        }
+        .header_right {
+            list-style: none;
+            li {
+                display: inline;
+            }
+        }
+        //modal
+        .tab-content {
+            ul {
+                list-style: none;
+                li {
+                    text-align: center;
+                    width: 12%;
+                    display: inline-flex;
+                    a {
+                        h6 {
+                            font-size: $fs-2 + 4px;
+                            color: $color-blue-0;
+                            margin: 0;
+                            font-weight: 400;
+                        }
+                        .from-price {
+                            font-size: $fs-2;
+                            color: $color-black-1;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .modal-content {
+            position: absolute;
+            top: 5%;
+            width: 1425px;
+            .modal-footer {
+                justify-content: center;
+            }
+        }
+        .modal-header {
+            margin-top: $mg-6;
+            font-size: $fs-3 - 4px;
+            padding: 0;
+            background-color: $color-white-1;
+            .header_container {
+                width: 80%;
+                margin: 0 auto;
+                ul {
+                    li {
+                        position: relative;
+                        .nav-link.active {
+                            color: $color-blue-1;
+                            background-color: $color-white-0;
+                        }
+                        a {
+                            color: $color-blue-0;
+                        }
+                    }
+                    .hr {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        height: 4px;
+                        background-color: $color-blue-2;
+                        transition: width 0.3s;
+                    }
+                    li:hover .hr {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

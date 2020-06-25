@@ -1,0 +1,79 @@
+// variable color
+$color-black-0:#333;
+$color-black-1:#555;
+$color-black-2:#626466;
+$color-black-3:#102b4e;
+$color-black-4:#242424;
+
+$color-white-0:#fff;
+$color-white-1:#fafafa;
+$color-white-2:#f7f7f7;
+
+$color-grey-0:#777;
+$color-grey-1:#a7a7a7;
+
+$color-red-0: rgb(217,46,20);
+
+$color-pink-0:#dc2c75;
+
+$color-blue-0:#0276b3;
+$color-blue-1:#102b4e;
+$color-blue-2:#2d96cd;
+$color-blue-3:#337ab7;
+$color-blue-5:#092A46;
+$color-blue-6:#37a9e8;
+$color-blue-4:rgba(2, 117, 179, 0.4);
+
+//focus
+
+//margin
+$mg-0:19px;
+$mg-1:2px;
+$mg-2:1rem;
+$mg-3:10px;
+$mg-4:5px;
+$mg-5:-15px;
+$mg-6:15px;
+$mg-7: 12px;
+$mg-8:20px;
+
+//padding
+$pd-0:95px;
+$pd-1:11px;
+$pd-2:15px;
+$pd-3:28px;
+$pd-4:35px;
+$pd-5:45px;
+$pd-6:25px;
+$pd-7:20px;
+$pd-8:150px;
+
+//font-size
+$fs-0:14px;//defaut
+$fs-1:1.6rem;
+$fs-2:16px;
+$fs-3:18px;
+$fs-4:10px;
+$fs-5:1.4rem;
+$fs-6:12px;
+$fs-7:4.8rem;
+$fs-8:42px;
+
+
+//font-weight
+$fw-0:500;
+$fw-2:450;
+$fw-1:700;
+
+//line-height
+$line-height-0:1.42857143;
+$line-height-1:20px;
+$line-height-2:1.9rem;
+$line-height-3:1.25;
+$line-height-4:1.1;
+
+//break points
+$breakpoints:(
+    'medium': 1200px,   
+    'small' : 768px,
+)

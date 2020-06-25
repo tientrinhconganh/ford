@@ -1,0 +1,84 @@
+.search {
+    background-color: $color-black-0;
+    padding-top: $pd-4;
+    padding-bottom: $pd-4;
+
+    .navbar-form-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    @include desktop {
+        form {
+            .input-group {
+                height: 45px;
+
+                .input-group-prepend {
+                    span {
+                        font-size: $fs-3 + 5px;
+                        color: $color-white-0;
+                        background-color: $color-black-0;
+                        border: none;
+                    }
+                }
+                .form-control {
+                    height: 45px;
+                    font-size: $fs-3 + 10px;
+                    color: $color-white-0;
+                    background-color: $color-black-0;
+                    border: none;
+                }
+                .form-control:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+        .popular {
+            text-align: right;
+            color: $color-white-0;
+            span {
+                display: -webkit-inline-box;
+                font-size: $fs-2;
+            }
+            ul {
+                padding-left: $pd-1;
+                li {
+                    display: inline-block;
+                    padding-left: $fs-2 - 10px;
+                    a {
+                        color: $color-grey-1;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+    @include tablet {
+        .col-4 {
+            display: none;
+        }
+        .popular {
+            color: $color-white-0;
+            span {
+                display: -webkit-inline-box;
+                font-size: $fs-2;
+            }
+            ul {
+                padding-left: $pd-1;
+                li {
+                    display: inline-block;
+                    padding-left: $fs-2 - 10px;
+                    a {
+                        color: $color-grey-1;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: $color-white-0;
+                    }
+                }
+            }
+        }
+    }
+}

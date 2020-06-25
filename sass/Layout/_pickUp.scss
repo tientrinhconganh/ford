@@ -1,0 +1,40 @@
+.pickUp {
+    text-align: center;
+    .pickUp_title {
+        h2 {
+            @include styleTitle($color-black-0, $fs-8, $mg-2 + 1, $mg-2, $line-height-4, $fw-0);
+        }
+    }
+    .pickUp_img {
+        img {
+            max-width: 330px;
+            width: 100%;
+            margin: auto;
+            height: auto;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $color-blue-0;
+        font-size: $fs-6;
+        span {
+            font-weight: $fw-1;
+        }
+    }
+    .from-price {
+        font-size: $fs-2;
+    }
+    .pickUp_btn {
+        @include styleButton($color-blue-0, $color-blue-0, 5px, 0, $color-white-0, 270px);
+        font-size: $fs-2;
+        height: 45px;
+    }
+    .pickUp_btn:hover {
+        @include styleButton($color-white-0, $color-black-3, 5px, 0, $color-black-3, 270px);
+    }
+    .pickUp_text {
+        color: $color-blue-0;
+        font-size: $fs-2;
+        padding: $pd-1;
+    }
+}

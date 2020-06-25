@@ -1,0 +1,163 @@
+.introduce {
+    @include desktop {
+        .introduce_top {
+            position: relative;
+            display: grid;
+            grid-template-columns: 75% 25%;
+            .introduce_text {
+                grid-column: 1 / 2;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                h2 {
+                    font-weight: 400;
+                    letter-spacing: 1.1px;
+                }
+                p {
+                    font-size: $fs-2;
+                    font-weight: bold;
+                    color: $color-black-2;
+                }
+            }
+            .introduce_item {
+                grid-column: 2 / 3;
+            }
+        }
+        .introduce_item {
+            position: relative;
+            overflow: hidden;
+            .introduce_lable_overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                background-color: $color-blue-4;
+                p {
+                    margin: $mg-7;
+                    font-size: $fs-6;
+                }
+                button {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 29px;
+                    margin-right: $mg-3;
+                }
+            }
+        }
+        .introduce_bottom {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            .introduce_Built {
+                grid-area: 1 / 1 / span 2 / span 2;
+                .introduce_lable_overlay {
+                    height: 70px;
+                    p {
+                        font-size: $fs-5;
+                    }
+                }
+            }
+        }
+    }
+    .introduce_item {
+        img {
+            width: 100%;
+        }
+    }
+    a:hover img {
+        transform: scale(1.1, 1.1);
+    }
+    .rounded-circle {
+        background: border-box;
+        border: 2px solid $color-white-0;
+        color: $color-white-0;
+    }
+    .rounded-circle:hover {
+        background: white;
+        color: teal;
+    }
+    @include tablet {
+        .introduce_top {
+            text-align: center;
+            .introduce_text {
+                p {
+                    display: none;
+                }
+                h2 {
+                    padding: $pd-4 - 5px;
+                }
+            }
+        }
+        .introduce_item {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            .introduce_lable_overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $color-blue-4;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                font-size: $fs-3 + 4px;
+                p {
+                    margin: $mg-7;
+                }
+                button {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 37px;
+                    margin-right: $mg-3;
+                }
+            }
+        }
+    }
+    @include mobile {
+        .introduce_top {
+            .introduce_text {
+                text-align: center;
+                p {
+                    display: none;
+                }
+                h2 {
+                    padding: $pd-4 - 5px;
+                }
+            }
+        }
+        .introduce_item {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            .introduce_lable_overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                background-color: $color-blue-4;
+                p {
+                    margin: $mg-7;
+                    font-size: $fs-6;
+                }
+                button {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 37px;
+                    margin-right: $mg-3;
+                }
+            }
+        }
+    }
+}

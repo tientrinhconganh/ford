@@ -1,0 +1,19 @@
+.airbag{
+    padding-top: $pd-7;;
+    text-align: center;
+    background-color: #f7f7f7;
+    .airbag_title{
+       h2{
+        @include styleTitle($color-red-0,$fs-8,$mg-3,$mg-8,$line-height-4,$fw-2);
+        letter-spacing: 1.2;
+       }
+       .airbag_btn{
+           @include styleButton1($color-white-0,$fs-3,$color-red-0,$color-red-0,270px,50px);
+           margin-top: $mg-8 + 20px;
+           margin-bottom: $mg-8 + 40px;
+       }
+       .airbag_btn:hover{
+        @include styleButton1($color-red-0,$fs-3,$color-white-0,$color-red-0,270px,50px);
+    }
+    }
+}

@@ -1,0 +1,26 @@
+.letUs {
+    position: relative;
+    .letUs_content {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        a {
+            text-align: center;
+            text-decoration: none;
+            color: $color-white-0;
+            .letUs_titel {
+                @include styleTitle($color-white-0, $fs-8, 0, 0, $line-height-4, $fw-2);
+                letter-spacing: 2px;
+            }
+            .letUs_text{
+                color: $color-white-0;
+                font-size: $fs-2;
+                padding: $pd-7;
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
